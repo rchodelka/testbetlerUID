@@ -6,10 +6,10 @@
   <title>URL Opener</title>
 </head>
 <body>
-  <h1>Open a Custom URL</h1>
-  <p>Enter the text to append:</p>
+  <h1>Open a customer profile ib Betler</h1>
+  <p>Please enter the Betler user ID:</p>
   <input type="text" id="inputText" placeholder="e.g. page123" />
-  <button onclick="openURL()">Open URL</button>
+  <button onclick="openURL()">Open profile</button>
 
   <script>
     const input = document.getElementById("inputText");
@@ -17,11 +17,11 @@
     function openURL() {
       const userInput = input.value.trim();
       if (userInput) {
-        const baseUrl = "https://example.com/"; // Replace with your actual base URL
+        const baseUrl = "https://bacoff.services.production.betler.superbet.com/customer/"; // Replace with your actual base URL
         const fullUrl = baseUrl + encodeURIComponent(userInput);
         window.open(fullUrl, "_blank");
       } else {
-        alert("Please enter some text.");
+        alert("Please enter user ID.");
       }
     }
 
