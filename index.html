@@ -50,12 +50,23 @@
     button:hover {
       background-color: #006edc;
     }
+     .page-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
   </style>
 </head>
 <body>
+  <header class="page-header">
+    Identity Generators
+  </header>
   <h1>Open a customer profile in Betler</h1>
   <p>Please enter the Betler user ID:</p>
-  <input type="text" id="inputText" placeholder="e.g. page123" />
+  <input type="text" id="inputText" placeholder="c34d071d-eb62-41fa-a4e8-411ac8007057" />
   <button onclick="openURL()">Open profile</button>
 
   <script>
